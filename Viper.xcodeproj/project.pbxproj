@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B478569B28E433A100203F28 /* ViperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478569A28E433A100203F28 /* ViperApp.swift */; };
-		B478569D28E433A100203F28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478569C28E433A100203F28 /* ContentView.swift */; };
+		B478569D28E433A100203F28 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478569C28E433A100203F28 /* ItemsView.swift */; };
 		B478569F28E433A600203F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B478569E28E433A600203F28 /* Assets.xcassets */; };
 		B47856A228E433A600203F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47856A128E433A600203F28 /* Preview Assets.xcassets */; };
 		B47856AC28E433A700203F28 /* ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856AB28E433A700203F28 /* ViperTests.swift */; };
 		B47856B628E433A700203F28 /* ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856B528E433A700203F28 /* ViperUITests.swift */; };
 		B47856B828E433A700203F28 /* ViperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856B728E433A700203F28 /* ViperUITestsLaunchTests.swift */; };
+		B47856C728E433D100203F28 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856C628E433D100203F28 /* ItemsInteractor.swift */; };
+		B47856C928E433E000203F28 /* ItemsPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856C828E433E000203F28 /* ItemsPresentor.swift */; };
+		B47856CB28E433E900203F28 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856CA28E433E900203F28 /* Items.swift */; };
+		B47856CD28E433F300203F28 /* ItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47856CC28E433F300203F28 /* ItemsRouter.swift */; };
+		B478F04A28F1BB4B00661BD5 /* BTHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F04928F1BB4A00661BD5 /* BTHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		B478569728E433A100203F28 /* Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B478569A28E433A100203F28 /* ViperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperApp.swift; sourceTree = "<group>"; };
-		B478569C28E433A100203F28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B478569C28E433A100203F28 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		B478569E28E433A600203F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47856A128E433A600203F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B47856A728E433A700203F28 /* ViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		B47856B128E433A700203F28 /* ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47856B528E433A700203F28 /* ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperUITests.swift; sourceTree = "<group>"; };
 		B47856B728E433A700203F28 /* ViperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B47856C628E433D100203F28 /* ItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
+		B47856C828E433E000203F28 /* ItemsPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsPresentor.swift; sourceTree = "<group>"; };
+		B47856CA28E433E900203F28 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		B47856CC28E433F300203F28 /* ItemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsRouter.swift; sourceTree = "<group>"; };
+		B478F04928F1BB4A00661BD5 /* BTHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				B478569A28E433A100203F28 /* ViperApp.swift */,
-				B478569C28E433A100203F28 /* ContentView.swift */,
+				B47856CA28E433E900203F28 /* Items.swift */,
+				B478F04828F1BB3300661BD5 /* Item View */,
+				B47856C828E433E000203F28 /* ItemsPresentor.swift */,
+				B47856C628E433D100203F28 /* ItemsInteractor.swift */,
+				B47856CC28E433F300203F28 /* ItemsRouter.swift */,
 				B478569E28E433A600203F28 /* Assets.xcassets */,
 				B47856A028E433A600203F28 /* Preview Content */,
 			);
@@ -125,6 +139,15 @@
 				B47856B728E433A700203F28 /* ViperUITestsLaunchTests.swift */,
 			);
 			path = ViperUITests;
+			sourceTree = "<group>";
+		};
+		B478F04828F1BB3300661BD5 /* Item View */ = {
+			isa = PBXGroup;
+			children = (
+				B478569C28E433A100203F28 /* ItemsView.swift */,
+				B478F04928F1BB4A00661BD5 /* BTHeaderView.swift */,
+			);
+			path = "Item View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +235,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"pt-PT",
 				Base,
 			);
 			mainGroup = B478568E28E433A100203F28;
@@ -257,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B478569D28E433A100203F28 /* ContentView.swift in Sources */,
+				B478569D28E433A100203F28 /* ItemsView.swift in Sources */,
 				B478569B28E433A100203F28 /* ViperApp.swift in Sources */,
+				B47856CB28E433E900203F28 /* Items.swift in Sources */,
+				B47856CD28E433F300203F28 /* ItemsRouter.swift in Sources */,
+				B47856C728E433D100203F28 /* ItemsInteractor.swift in Sources */,
+				B478F04A28F1BB4B00661BD5 /* BTHeaderView.swift in Sources */,
+				B47856C928E433E000203F28 /* ItemsPresentor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +380,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -404,6 +434,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

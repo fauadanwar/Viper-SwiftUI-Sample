@@ -11,7 +11,8 @@ import SwiftUI
 struct ViperApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let itemRouter = ItemsRouter.setup()
+            itemRouter.entryPoint
         }
     }
 }
